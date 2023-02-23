@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/JulioRugolo/APIs#readme",
   "dependencies": {
+    "sweetalert2": "^11.7.2",
     "vite": "^4.1.4"
   },
   "devDependencies": {

@@ -56,8 +56,7 @@ aside {
 
 main {
     display: flex;
-    height: 90%;
-    background-color: aqua;
+    height: 90vh;
 }
 
 section {
@@ -69,6 +68,8 @@ section {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
