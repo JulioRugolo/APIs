@@ -1,0 +1,16 @@
+#sectionIbge {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#ibge-input {
+  width: 250px;
+  height: 25px;
+  padding-left: 10px;
+}
+
+#search-btn {
+  width: 80px;
+  height: 25px;
+}

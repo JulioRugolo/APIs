@@ -1,2 +1,2 @@
-import './style.css';
-import './pages/bank';
+import './pages/bank.js';
+import './pages/ibge.js';
