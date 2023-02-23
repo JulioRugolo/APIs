@@ -1,0 +1,30 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "Desenvolvimento para APIs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioRugolo/APIs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioRugolo/APIs/issues"
+  },
+  "homepage": "https://github.com/JulioRugolo/APIs#readme",
+  "dependencies": {
+    "vite": "^4.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
