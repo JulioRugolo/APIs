@@ -10,7 +10,7 @@ let marker;
 
 const mapCreate = (latitude, longitude, street) => {
   if (!map) {
-    map = L.map('map').setView([latitude, longitude], 15);
+    map = L.map('map').setView([latitude, longitude], 17);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -20,7 +20,7 @@ const mapCreate = (latitude, longitude, street) => {
       .bindPopup(`${street}`)
       .openPopup();
   } else {
-    map.setView([latitude, longitude], 15);
+    map.setView([latitude, longitude], 17);
     marker.setLatLng([latitude, longitude])
       .setPopupContent(street)
       .openPopup();
@@ -62,9 +62,10 @@ const buscarCep = async () => {
     const { coordinates: { latitude, longitude } } = location;
     showAdress(cep, state, city, neighborhood, street, latitude, longitude);
     if (latitude) {
-      contMap.innerHTML = '';
       mapCreate(latitude, longitude, street);
     } else {
+      if (map) map.remove();
+      map = '';
       contMap.innerText = `Mapa indisponível para o cep ${cep}`;
     }
   } catch (error) {
@@ -72,7 +73,7 @@ const buscarCep = async () => {
       icon: 'error',
       title: 'Oops...',
       text: 'CEP não encontrado!',
-      footer: `${error.message}`,
+      footer: `${error}`,
     });
   }
 };
