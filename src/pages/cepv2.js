@@ -73,7 +73,7 @@ const buscarCep = async () => {
       icon: 'error',
       title: 'Oops...',
       text: 'CEP não encontrado!',
-      footer: `${error}`,
+      footer: 'Tente novamente.',
     });
   }
 };
